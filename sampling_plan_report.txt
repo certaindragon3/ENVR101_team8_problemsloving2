@@ -1,0 +1,122 @@
+MOBILE AIR QUALITY SAMPLING PLAN
+===============================
+
+MORNING SAMPLING PLAN (8:00 AM - 12:00 PM)
+Total duration: 240.0 minutes
+Roads covered: 11
+
+  08:00 - 08:05: ['East Q Street', 'Drumm Avenue']
+  08:05 - 08:10: Connector: ['East Q Street', 'Drumm Avenue']
+  08:10 - 08:15: Connector: Drumm Avenue
+  08:15 - 08:20: Connector: Drumm Avenue
+  08:20 - 08:25: Connector: East O Street
+  08:25 - 08:30: East O Street
+* 08:30 - 08:50: FIXED SAMPLING at location 122709562
+  08:50 - 08:55: East O Street
+  08:55 - 09:00: Connector: East O Street
+  09:00 - 09:05: Connector: Watson Avenue
+  09:05 - 09:10: Watson Avenue
+  09:10 - 09:15: Watson Avenue
+  09:15 - 09:20: Connector: East Cruces Street
+  09:20 - 09:25: Connector: East Cruces Street
+  09:25 - 09:30: Connector: East Cruces Street
+  09:30 - 09:35: Drumm Avenue
+* 09:35 - 09:55: FIXED SAMPLING at location 122602601
+  09:55 - 10:00: East Sandison Street
+  10:00 - 10:05: Connector: East Sandison Street
+  10:05 - 10:10: Connector: East Sandison Street
+  10:10 - 10:15: Connector: Watson Avenue
+  10:15 - 10:20: Connector: Watson Avenue
+  10:20 - 10:25: Connector: Watson Avenue
+  10:25 - 10:30: Watson Avenue
+  10:30 - 10:35: Connector: East O Street
+  10:35 - 10:40: Connector: East O Street
+  10:40 - 10:45: Connector: Drumm Avenue
+  10:45 - 10:50: Drumm Avenue
+  10:50 - 10:55: Connector: ['East Q Street', 'Drumm Avenue']
+  10:55 - 11:00: East Q Street
+  11:00 - 11:05: Blinn Avenue
+  11:05 - 11:10: East Sandison Street
+  11:10 - 11:15: Gamble Avenue
+  11:15 - 11:20: East Cruces Street
+  11:20 - 11:25: Drumm Avenue
+  11:25 - 11:30: Drumm Avenue
+  11:30 - 11:35: East Colon Street
+  11:35 - 11:40: Blinn Avenue
+  11:40 - 11:45: Connector: East O Street
+  11:45 - 11:50: Connector: East O Street
+  11:50 - 11:55: Sanford Avenue
+  11:55 - 12:00: Sanford Avenue
+
+AFTERNOON SAMPLING PLAN (1:00 PM - 5:00 PM)
+Total duration: 240.0 minutes
+Roads covered: 10
+
+  13:00 - 13:05: East Robidoux Street
+  13:05 - 13:10: Connector: Watson Avenue
+  13:10 - 13:15: Connector: East L Street
+  13:15 - 13:20: Sanford Avenue
+* 13:20 - 13:40: FIXED SAMPLING at location 123114461
+  13:40 - 13:45: Sanford Avenue
+  13:45 - 13:50: Connector: East M Street
+  13:50 - 13:55: Connector: Watson Avenue
+  13:55 - 14:00: Connector: Watson Avenue
+  14:00 - 14:05: Connector: East L Street
+  14:05 - 14:10: Connector: East L Street
+  14:10 - 14:15: Connector: ['Coil Avenue', 'Mahar Avenue', 'East Young Street']
+  14:15 - 14:20: Connector: East Denni Street
+  14:20 - 14:25: Connector: Blinn Avenue
+  14:25 - 14:30: Blinn Avenue
+* 14:30 - 14:50: FIXED SAMPLING at location 122696213
+  14:50 - 14:55: East Denni Street
+  14:55 - 15:00: Connector: East Denni Street
+  15:00 - 15:05: Blinn Avenue
+  15:05 - 15:10: Blinn Avenue
+  15:10 - 15:15: Connector: Blinn Avenue
+  15:15 - 15:20: Blinn Avenue
+  15:20 - 15:25: Connector: East Denni Street
+  15:25 - 15:30: Connector: ['Coil Avenue', 'Mahar Avenue', 'East Young Street']
+  15:30 - 15:35: Connector: East L Street
+  15:35 - 15:40: Connector: East L Street
+  15:40 - 15:45: Connector: East L Street
+  15:45 - 15:50: Connector: Sanford Avenue
+  15:50 - 15:55: Sanford Avenue
+  15:55 - 16:00: Connector: East M Street
+  16:00 - 16:05: Connector: Watson Avenue
+  16:05 - 16:10: Watson Avenue
+  16:10 - 16:15: East L Street
+  16:15 - 16:20: Sanford Avenue
+  16:20 - 16:25: East Young Street
+  16:25 - 16:30: Flint Avenue
+  16:30 - 16:35: Connector: Flint Avenue
+  16:35 - 16:40: East Young Street
+  16:40 - 16:45: East Young Street
+  16:45 - 16:50: Watson Avenue
+  16:50 - 16:55: Connector: Watson Avenue
+  16:55 - 17:00: Connector: Watson Avenue
+
+SUMMARY
+=======
+Total unique roads covered: 18
+Drumm Avenue covered: Yes
+
+ROADS COVERED
+=============
+- Blinn Avenue
+- Drumm Avenue
+- East Colon Street
+- East Cruces Street
+- East Denni Street
+- East L Street
+- East M Street
+- East O Street
+- East Q Street
+- East Robidoux Street
+- East Sandison Street
+- East Young Street
+- Flint Avenue
+- Gamble Avenue
+- Sanford Avenue
+- Watson Avenue
+- ['Coil Avenue', 'Mahar Avenue', 'East Young Street']
+- ['East Q Street', 'Drumm Avenue']

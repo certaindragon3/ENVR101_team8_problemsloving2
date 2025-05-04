@@ -1,0 +1,43 @@
+from_node,to_node,road_name,start_time,end_time,type
+123114461,123013752,East Robidoux Street,13:00,13:05,sampling
+123013752,122583991,Connector: Watson Avenue,13:05,13:10,connector
+122583991,122583988,Connector: East L Street,13:10,13:15,connector
+122583988,123114461,Sanford Avenue,13:15,13:20,sampling
+123114461,123114461,FIXED SAMPLING at location 123114461,13:20,13:40,star_stop
+123114461,122909504,Sanford Avenue,13:40,13:45,sampling
+122909504,122909506,Connector: East M Street,13:45,13:50,connector
+122909506,123013752,Connector: Watson Avenue,13:50,13:55,connector
+123013752,122583991,Connector: Watson Avenue,13:55,14:00,connector
+122583991,122583994,Connector: East L Street,14:00,14:05,connector
+122583994,122583996,Connector: East L Street,14:05,14:10,connector
+122583996,122696211,"Connector: ['Coil Avenue', 'Mahar Avenue', 'East Young Street']",14:10,14:15,connector
+122696211,122696213,Connector: East Denni Street,14:15,14:20,connector
+122696213,122991971,Connector: Blinn Avenue,14:20,14:25,connector
+122991971,122696213,Blinn Avenue,14:25,14:30,sampling
+122696213,122696213,FIXED SAMPLING at location 122696213,14:30,14:50,star_stop
+122696213,122696211,East Denni Street,14:50,14:55,sampling
+122696211,122696213,Connector: East Denni Street,14:55,15:00,connector
+122696213,123275556,Blinn Avenue,15:00,15:05,sampling
+123275556,122696213,Blinn Avenue,15:05,15:10,sampling
+122696213,122991971,Connector: Blinn Avenue,15:10,15:15,connector
+122991971,122696213,Blinn Avenue,15:15,15:20,sampling
+122696213,122696211,Connector: East Denni Street,15:20,15:25,connector
+122696211,122583996,"Connector: ['Coil Avenue', 'Mahar Avenue', 'East Young Street']",15:25,15:30,connector
+122583996,122583994,Connector: East L Street,15:30,15:35,connector
+122583994,122583991,Connector: East L Street,15:35,15:40,connector
+122583991,122583988,Connector: East L Street,15:40,15:45,connector
+122583988,123114461,Connector: Sanford Avenue,15:45,15:50,connector
+123114461,122909504,Sanford Avenue,15:50,15:55,sampling
+122909504,122909506,Connector: East M Street,15:55,16:00,connector
+122909506,123013752,Connector: Watson Avenue,16:00,16:05,connector
+123013752,122583991,Watson Avenue,16:05,16:10,sampling
+122583991,122583988,East L Street,16:10,16:15,sampling
+122583988,123386130,Sanford Avenue,16:15,16:20,sampling
+123386130,122679498,East Young Street,16:20,16:25,sampling
+122679498,122679495,Flint Avenue,16:25,16:30,sampling
+122679495,122679498,Connector: Flint Avenue,16:30,16:35,connector
+122679498,123506455,East Young Street,16:35,16:40,sampling
+123506455,123013750,East Young Street,16:40,16:45,sampling
+123013750,122696249,Watson Avenue,16:45,16:50,sampling
+122696249,123013750,Connector: Watson Avenue,16:50,16:55,connector
+123013750,122583991,Connector: Watson Avenue,16:55,17:00,connector

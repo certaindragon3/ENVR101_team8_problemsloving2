@@ -1,0 +1,43 @@
+from_node,to_node,road_name,start_time,end_time,type
+122602601,122923902,"['East Q Street', 'Drumm Avenue']",08:00,08:05,sampling
+122923902,122602601,"Connector: ['East Q Street', 'Drumm Avenue']",08:05,08:10,connector
+122602601,123112512,Connector: Drumm Avenue,08:10,08:15,connector
+123112512,122709564,Connector: Drumm Avenue,08:15,08:20,connector
+122709564,122709563,Connector: East O Street,08:20,08:25,connector
+122709563,122709562,East O Street,08:25,08:30,sampling
+122709562,122709562,FIXED SAMPLING at location 122709562,08:30,08:50,star_stop
+122709562,122709561,East O Street,08:50,08:55,sampling
+122709561,122709562,Connector: East O Street,08:55,09:00,connector
+122709562,123013757,Connector: Watson Avenue,09:00,09:05,connector
+123013757,122709562,Watson Avenue,09:05,09:10,sampling
+122709562,123013759,Watson Avenue,09:10,09:15,sampling
+123013759,123112507,Connector: East Cruces Street,09:15,09:20,connector
+123112507,1714402899,Connector: East Cruces Street,09:20,09:25,connector
+1714402899,123112512,Connector: East Cruces Street,09:25,09:30,connector
+123112512,122602601,Drumm Avenue,09:30,09:35,sampling
+122602601,122602601,FIXED SAMPLING at location 122602601,09:35,09:55,star_stop
+122602601,122602599,East Sandison Street,09:55,10:00,sampling
+122602599,122602597,Connector: East Sandison Street,10:00,10:05,connector
+122602597,122602595,Connector: East Sandison Street,10:05,10:10,connector
+122602595,123013759,Connector: Watson Avenue,10:10,10:15,connector
+123013759,122709562,Connector: Watson Avenue,10:15,10:20,connector
+122709562,123013757,Connector: Watson Avenue,10:20,10:25,connector
+123013757,122709562,Watson Avenue,10:25,10:30,sampling
+122709562,122709563,Connector: East O Street,10:30,10:35,connector
+122709563,122709564,Connector: East O Street,10:35,10:40,connector
+122709564,123112512,Connector: Drumm Avenue,10:40,10:45,connector
+123112512,122602601,Drumm Avenue,10:45,10:50,sampling
+122602601,122923902,"Connector: ['East Q Street', 'Drumm Avenue']",10:50,10:55,connector
+122923902,122923899,East Q Street,10:55,11:00,sampling
+122923899,122602597,Blinn Avenue,11:00,11:05,sampling
+122602597,122602599,East Sandison Street,11:05,11:10,sampling
+122602599,1714402899,Gamble Avenue,11:10,11:15,sampling
+1714402899,123112512,East Cruces Street,11:15,11:20,sampling
+123112512,122709564,Drumm Avenue,11:20,11:25,sampling
+122709564,123704582,Drumm Avenue,11:25,11:30,sampling
+123704582,123275549,East Colon Street,11:30,11:35,sampling
+123275549,122709563,Blinn Avenue,11:35,11:40,sampling
+122709563,122709562,Connector: East O Street,11:40,11:45,connector
+122709562,122709561,Connector: East O Street,11:45,11:50,connector
+122709561,123386132,Sanford Avenue,11:50,11:55,sampling
+123386132,123307963,Sanford Avenue,11:55,12:00,sampling
