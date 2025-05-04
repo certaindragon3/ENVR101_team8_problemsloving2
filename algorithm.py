@@ -8,6 +8,9 @@ from datetime import datetime, timedelta
 import random
 import itertools
 
+# Create output directory if it doesn't exist
+os.makedirs('output', exist_ok=True)
+
 # Load the road network data
 def load_road_network(file_path):
     """Load the road network from a GPKG file."""
@@ -482,32 +485,27 @@ def visualize_route(route, star_nodes, G, nodes_gdf, edges_gdf, star_locations, 
         route_gdf = pd.concat(route_edges)
         route_gdf.plot(ax=ax, color='blue', linewidth=2)
     
-    # Add markers for star nodes
-    for i, star in enumerate(star_nodes):
-        node_data = nodes_gdf[nodes_gdf['osmid'] == star]
-        if not node_data.empty:
-            x, y = node_data.iloc[0]['x'], node_data.iloc[0]['y']
-            ax.scatter(x, y, color='orange', s=100, zorder=5)
-            ax.annotate(f"Star {i+1}", (x, y), xytext=(5, 5), 
-                       textcoords="offset points", fontsize=10, fontweight='bold')
     
-    # Add title and legend
+    # Add title
     plt.title(title)
     
-    # Add legend
+    # Add legend OUTSIDE the map
     from matplotlib.lines import Line2D
     legend_elements = [
         Line2D([0], [0], color='blue', lw=2, label='Sampling Route'),
         Line2D([0], [0], marker='*', color='w', markerfacecolor='red', markersize=10, label='Fixed Sampling Points')
     ]
-    ax.legend(handles=legend_elements, loc='upper right')
+    # Place legend outside the plot area
+    plt.legend(handles=legend_elements, loc='upper left', bbox_to_anchor=(1.05, 1))
     
-    plt.tight_layout()
+    # Adjust layout to make room for the legend
+    plt.tight_layout(rect=[0, 0, 0.85, 1])
     
-    # Save figure
-    plt.savefig(f"{title.replace(' ', '_')}.png", dpi=300)
+    # Save figure to output folder
+    output_path = os.path.join('output', f"{title.replace(' ', '_')}.png")
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
-    print(f"Saved visualization to {title.replace(' ', '_')}.png")
+    print(f"Saved visualization to {output_path}")
 
 # Main function to design the sampling plan
 def design_sampling_plan(file_path):
@@ -549,7 +547,8 @@ def design_sampling_plan(file_path):
 def create_report(morning_schedule, afternoon_schedule, morning_duration, afternoon_duration, 
                  morning_roads, afternoon_roads):
     """Create a human-readable report of the sampling plan."""
-    with open("sampling_plan_report.txt", "w") as f:
+    output_path = os.path.join('output', "sampling_plan_report.txt")
+    with open(output_path, "w") as f:
         f.write("MOBILE AIR QUALITY SAMPLING PLAN\n")
         f.write("===============================\n\n")
         
@@ -595,7 +594,7 @@ def create_report(morning_schedule, afternoon_schedule, morning_duration, aftern
         for road in sorted(all_roads):
             f.write(f"- {road}\n")
     
-    print("Created sampling plan report: sampling_plan_report.txt")
+    print(f"Created sampling plan report: {output_path}")
 
 # Run the program
 if __name__ == "__main__":
@@ -610,9 +609,9 @@ if __name__ == "__main__":
     print(f"Afternoon route: {len(afternoon_schedule)} segments, {afternoon_duration:.1f} minutes")
     print(f"Total roads covered: {len(morning_roads.union(afternoon_roads))}")
     
-    # Export schedules to CSV
-    pd.DataFrame(morning_schedule).to_csv('morning_schedule.csv', index=False)
-    pd.DataFrame(afternoon_schedule).to_csv('afternoon_schedule.csv', index=False)
+    # Export schedules to CSV in output folder
+    pd.DataFrame(morning_schedule).to_csv('output/morning_schedule.csv', index=False)
+    pd.DataFrame(afternoon_schedule).to_csv('output/afternoon_schedule.csv', index=False)
     
     # Create human-readable report
     create_report(morning_schedule, afternoon_schedule, morning_duration, afternoon_duration, morning_roads, afternoon_roads)
